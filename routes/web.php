@@ -20,6 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get("/kelas", [KelasController::class, "index"]);
-
-//STRUKTUR SEKOLAH
-Route::get('/guru', [GuruController::class, 'index'])->name('struktur.index');
+Route::get("/kelas/detail", [KelasController::class, "detail"]);
