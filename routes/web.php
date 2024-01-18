@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\KelasController;
+use App\Http\Controllers\SambutanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get("/kelas", [KelasController::class, "index"]);
+Route::get("/sambutan", [SambutanController::class, "index"]);
