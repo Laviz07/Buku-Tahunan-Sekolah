@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('kepsek', function (Blueprint $table) {
             $table->bigInteger('id_kepsek')->autoIncrement();
-            $table->bigInteger('id_sekolah', false)->nullable(false);
+            // $table->bigInteger('id_sekolah', false)->nullable(false);
             $table->string('nama_kepsek', 50)->nullable(false);
             $table->string('cover_kepsek', 255)->nullable(false);
             $table->string('instagram_kepsek', 255)->nullable(false);
@@ -26,7 +26,7 @@ return new class extends Migration
             $table->text('alamat_kepsek')->nullable(false);
             $table->timestamps();
             // FK SEKOLAH
-            $table->foreign('id_sekolah')->references('id_sekolah')->on('sekolah')->cascadeOnDelete()->cascadeOnUpdate();
+            // $table->foreign('id_sekolah')->references('id_sekolah')->on('sekolah')->cascadeOnDelete()->cascadeOnUpdate();
         });
     }
 

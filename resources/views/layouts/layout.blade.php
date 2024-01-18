@@ -54,7 +54,7 @@
           <a class="nav-link text-uppercase " href="#">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase " href="#">teacher</a>
+          <a class="nav-link text-uppercase " href="{{url('/guru')}}">teacher</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-uppercase " href="{{url('/kelas')}}">class</a>
