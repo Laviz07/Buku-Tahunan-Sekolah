@@ -23,3 +23,4 @@ Route::get("/kelas", [KelasController::class, "index"]);
 
 // Ekskul
 Route::get('/wali', [EkskulController::class, 'index'])->name('ekskul.index');
+Route::get("/kelas/detail", [KelasController::class, "detail"]);

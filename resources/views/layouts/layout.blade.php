@@ -31,7 +31,7 @@
     }
 
     .navbar-nav li a:hover {
-      color: black; 
+      color: #A7D7C5; 
     }
   </style>
 
@@ -57,7 +57,7 @@
           <a class="nav-link text-uppercase " href="#">teacher</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase " href="#">class</a>
+          <a class="nav-link text-uppercase " href="{{url('/kelas')}}">class</a>
         </li>  
         <li class="nav-item">
           <a class="nav-link text-uppercase " href="#">excul</a>
