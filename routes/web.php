@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get("/kelas", [KelasController::class, "index"]);
+Route::get("/kelas/detail", [KelasController::class, "detail"]);
