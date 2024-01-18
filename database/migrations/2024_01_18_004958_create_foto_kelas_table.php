@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mapel', function (Blueprint $table) {
-            $table->bigInteger('id_mapel')->autoIncrement();
-            $table->bigInteger('nip_guru', false)->nullable(false);
+        Schema::create('foto_kelas', function (Blueprint $table) {
+            $table->integer("id_kelas")->nullable(false);
+            $table->string("foto_kelas", 255)->nullable(false);
             $table->timestamps();
-            //FK GURU
-            $table->foreign('nip_guru')->references('nip_guru')->on('guru')->cascadeOnDelete()->cascadeOnUpdate();
+
+            // $table->foreign('id_kelas')->references('id_kelas')->on('kelas')
+            //     ->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mapel');
+        Schema::dropIfExists('foto_kelas');
     }
 };

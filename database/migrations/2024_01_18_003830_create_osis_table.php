@@ -12,7 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('osis', function (Blueprint $table) {
-            $table->id();
+            $table->bigInteger('id_osis')->autoIncrement();
+            $table->string('id_sekolah', false)->nullable(false);
+            $table->bigInteger('nis_siswa', false)->nullable(false);
+            $table->string('jabatan_osis', 50)->nullable(false);
+            $table->date('mulai_jabatan_osis')->nullable(false);
+            $table->date('selesai_jabatan_osis')->nullabel(false);
             $table->timestamps();
         });
     }
@@ -22,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('oses');
+        Schema::dropIfExists('osis');
     }
 };
