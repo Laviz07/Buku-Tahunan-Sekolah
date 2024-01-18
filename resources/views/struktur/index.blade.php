@@ -61,10 +61,15 @@
         font-family: 'Roboto Slab', serif;
         font-weight: 500;
     }
+    .daun-kiri {
+        width: 80px;
+        margin-top: -65px;
+        margin-left: 300px;
+    }
 </style>
 
     <div class="container">
-        <img class="img" src="{{asset('smkn1.jpeg')}}" alt="smkn1">
+        <img class="img" src="{{asset('images/smkn1.jpeg')}}" alt="smkn1">
         <br>
         <div class="text">
             <div class="h1">SCHOOL STRUCTURE</div>
@@ -83,7 +88,7 @@
     </div>
 
     <div class="content-container">
-        <h2 class="headmaster-text">Our Headmaster</h2>
-        
+        <h2 class="headmaster-text">OUR HEADMASTER</h2>
+        <img class="daun-kiri" src="images/daun_polos.png" alt="">
     </div>
 @endsection

@@ -21,3 +21,5 @@ Route::get('/', function () {
 
 Route::get("/kelas", [KelasController::class, "index"]);
 Route::get("/kelas/detail", [KelasController::class, "detail"]);
+
+Route::get('/guru', [GuruController::class, 'index'])->name('struktur.index');
