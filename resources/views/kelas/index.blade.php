@@ -2,7 +2,7 @@
 @section('title', 'Daftar Kelas')
 @section('content')  
     <div class="container mt-4 mb-4">
-            <div class="d-flex ">
+            <div class="d-flex " style="100vh">
                 <div>
                     <span class="text-uppercase d-block " style="font-size: 100px; font-weight: 500; line-height: 100px; font-family: Playfair Display; color: #2E6E65; width:500px" >
                         List of classes
@@ -13,9 +13,9 @@
                     </span>
 
                     <a href="#daftar-kelas">
-                        <div class="btn mt-5 ps-4 pe-4" style="background-color:#2E6E65; border-radius:15px; color:white; font-family: Playfair Display; font-size: 20px; ">
+                        <button class="btn mt-5 ps-4 pe-4" style="background-color:#2E6E65; border-radius:15px; color:white; font-family: Playfair Display; font-size: 20px; ">
                             Let's look at the class
-                        </div>
+                        </button>
                     </a>
                 </div>
 
