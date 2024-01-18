@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\kelas;
+use App\Models\foto_siswa;
 use Illuminate\Http\Request;
 
-class KelasController extends Controller
+class FotoSiswaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,6 @@ class KelasController extends Controller
     public function index()
     {
         //
-        return view('kelas.index');
     }
 
     /**
@@ -35,7 +34,7 @@ class KelasController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(kelas $kelas)
+    public function show(foto_siswa $foto_siswa)
     {
         //
     }
@@ -43,7 +42,7 @@ class KelasController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(kelas $kelas)
+    public function edit(foto_siswa $foto_siswa)
     {
         //
     }
@@ -51,7 +50,7 @@ class KelasController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, kelas $kelas)
+    public function update(Request $request, foto_siswa $foto_siswa)
     {
         //
     }
@@ -59,7 +58,7 @@ class KelasController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(kelas $kelas)
+    public function destroy(foto_siswa $foto_siswa)
     {
         //
     }
