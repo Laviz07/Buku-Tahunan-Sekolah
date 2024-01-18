@@ -3,13 +3,15 @@
 @section('content')  
     {{-- <div class="container mt-4 mb-4">sambitan</div> --}}
     <style>
-    
+    img{
+        width: 500px
+    };
     </style>
     <div class="smbtn1">
         <h2 class="text-uppercase mt-1 d-block " style="font-size: 30px;  font-family: Playfair Display; color: #2E6E65;">
             BUKU TAHUNAN DIGITAL
         </h2>
-        <img src="{{ asset('smkn1.jpg') }}" alt="smkn1">
+        <img src="{{ asset('images/smkn1.jpg') }}" alt="smkn1">
         <h2 class="text-uppercase mt-1 d-block " style="font-size: 30px;  font-family: Playfair Display; color: #2E6E65; font-weight: bold;">
             SMKN 1 KOTA BEKASI ANGKATAN 25
         </h2>
