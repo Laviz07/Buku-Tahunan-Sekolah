@@ -64,7 +64,12 @@
     .daun-kiri {
         width: 80px;
         margin-top: -65px;
-        margin-left: 300px;
+        margin-left: 350px;
+    }
+    .daun-kanan {
+        width: 80px;
+        margin-top: -65px;
+        margin-left: 250px;
     }
 </style>
 
@@ -83,12 +88,17 @@
         <br>
         <br>
         <button class="custom-button">
-            <a href="">Lets see our teacher</a>
+            <a href="#daftar-guru">Lets see our teacher</a>
         </button>
     </div>
 
-    <div class="content-container">
+    <div class="content-container" id="daftar-guru">
         <h2 class="headmaster-text">OUR HEADMASTER</h2>
         <img class="daun-kiri" src="images/daun_polos.png" alt="">
+        <img class="daun-kanan" src="images/daun_polos2.png" alt="">
+    </div>
+    <div class="container">
+        <div class=" rounded ms-5  " style="display:flex; background-color:#D9D9D9; width:250px; height:300px; stroke-width: 3px; stroke: #2E6E65; justify-content:center;">
+        </div>
     </div>
 @endsection
