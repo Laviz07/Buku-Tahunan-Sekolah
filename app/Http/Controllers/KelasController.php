@@ -15,6 +15,12 @@ class KelasController extends Controller
         //
         return view('kelas.index');
     }
+    
+    public function detail()
+    {
+        //
+        return view('kelas.detail');
+    }
 
     /**
      * Show the form for creating a new resource.
