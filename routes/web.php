@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\KelasController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EkskulController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get("/kelas", [KelasController::class, "index"]);
+
+// Ekskul
+Route::get('/wali', [EkskulController::class, 'index'])->name('ekskul.index');
