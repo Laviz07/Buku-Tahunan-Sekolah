@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GuruController;
 use App\Http\Controllers\KelasController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,6 @@ Route::get('/', function () {
 });
 
 Route::get("/kelas", [KelasController::class, "index"]);
+
+//STRUKTUR SEKOLAH
+Route::get('/guru', [GuruController::class, 'index'])->name('struktur.index');
