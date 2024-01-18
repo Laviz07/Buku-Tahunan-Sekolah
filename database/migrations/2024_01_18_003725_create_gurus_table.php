@@ -11,9 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('gurus', function (Blueprint $table) {
-            $table->id();
+        Schema::create('guru', function (Blueprint $table) {
+            $table->bigInteger('nip_guru')->autoIncrement();
+            $table->bigInteger('sekolah', false)->nullable(false);
+            $table->string('nama_guru', 50)->nullable(false);
+            $table->string('instagram_guru', 255)->nullable(false);
+            $table->string('cover_guru', 255)->nullable(false);
+            $table->string('x_guru', 255)->nullable(false);
+            $table->string('facebook_guru', 255)->nullable(false);
+            $table->string('tempat_lahir_guru', 50)->nullable(false);
+            $table->date('tanggal_lahir_guru')->nullable(false);
+            $table->string('hobi_guru', 255)->nullable(false);
+            $table->string('quotes_guru', 255)->nullable(false);
             $table->timestamps();
+            //FK SEKOLAH
+            $table->foreign('id_sekolah')->references('id_sekolah')->on('sekolah')->cascadeOnDelete()->cascadeOnUpdate();
         });
     }
 
@@ -22,6 +34,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('gurus');
+        Schema::dropIfExists('guru');
     }
 };

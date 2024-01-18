@@ -11,9 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mapels', function (Blueprint $table) {
-            $table->id();
+        Schema::create('mapel', function (Blueprint $table) {
+            $table->bigInteger('id_mapel')->autoIncrement();
+            $table->bigInteger('nip_guru', false)->nullable(false);
             $table->timestamps();
+            //FK GURU
+            $table->foreign('nip_guru')->references('nip_guru')->on('guru')->cascadeOnDelete()->cascadeOnUpdate();
         });
     }
 
@@ -22,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mapels');
+        Schema::dropIfExists('mapel');
     }
 };
