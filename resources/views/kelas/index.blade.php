@@ -35,44 +35,19 @@
             </div>
 
             <div id="daftar-kelas" class="row mt-5 mb-4">
+                @for ($i = 0; $i < 8; $i++)
                 <div class="col-lg-4 col-md-12 mb-4 mt-4 mb-lg-0">
-                    <div class="image-container">
+                    <div class="image-container-l">
                         <a href="{{url('kelas', ['detail'])}}">
                             <img class="image" src="{{ asset('images/test1.jpg' ) }}" alt="" 
                             style="width: 100%; height: 200px; border-radius: 5px">
                         </a>
-                        <span class="text-uppercase d-block mt-2 text-center" style="font-family: Inter; font-size: 18px; font-weight: 700;">
-                            Kelas XII RPL A
-                        </span>
                     </div>
+                    <span class="text-uppercase d-block mt-2 text-center " style="font-family: `Roboto Slab`, serif; font-size: 18px; font-weight: 700;">
+                        Kelas XII RPL A
+                    </span>
                 </div>
-
-                <div class="col-lg-4 col-md-12 mb-4 mt-4 mb-lg-0">
-                    <div class="image-container">
-                        <img class="image" src="{{ asset('images/test1.jpg' ) }}" alt="" style="width: 100%; height: 200px; border-radius: 5px">
-                        <span class="text-uppercase d-block mt-2 text-center" style="font-family: Inter; font-size: 18px; font-weight: 700;">
-                            Kelas XII RPL A
-                        </span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 mb-4 mt-4 mb-lg-0">
-                    <div class="image-container">
-                        <img class="image" src="{{ asset('images/test1.jpg' ) }}" alt="" style="width: 100%; height: 200px; border-radius: 5px">
-                        <span class="text-uppercase d-block mt-2 text-center" style="font-family: Inter; font-size: 18px; font-weight: 700;">
-                            Kelas XII RPL A
-                        </span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 mb-4 mt-4 mb-lg-0">
-                    <div class="image-container">
-                        <img class="image" src="{{ asset('images/test1.jpg' ) }}" alt="" style="width: 100%; height: 200px; border-radius: 5px">
-                        <span class="text-uppercase d-block mt-2 text-center" style="font-family: Inter; font-size: 18px; font-weight: 700;">
-                            Kelas XII RPL A
-                        </span>
-                    </div>
-                </div>
+                @endfor
             </div>
             
     </div>

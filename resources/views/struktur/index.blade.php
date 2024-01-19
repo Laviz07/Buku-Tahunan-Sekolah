@@ -2,9 +2,6 @@
 @section('title', 'Struktur Sekolah')
 @section('content')
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
-
 <style>
     .img{
         display: block;
@@ -74,7 +71,7 @@
 </style>
 
     <div class="container">
-        <img class="img" src="{{asset('images/smkn1.jpeg')}}" alt="smkn1">
+        <img class="img" src="{{asset('images/smkn1.jpg')}}" alt="smkn1">
         <br>
         <div class="text">
             <div class="h1">SCHOOL STRUCTURE</div>
