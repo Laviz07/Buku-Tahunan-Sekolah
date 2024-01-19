@@ -28,12 +28,12 @@
                 <img src="{{ asset('images/test1.jpg') }}" alt="" class="rounded ms-5 " style=" width:530px; height:330px " >
             
                 <div class="ms-4">
-                    <img src="{{ asset('images/clover.png') }}" alt="" style="width: 90px; height:90px;">
-                    <img src="{{ asset('images/clover.png') }}" alt="" style="width: 90px; height:90px;">
-                    <img src="{{ asset('images/clover.png') }}" alt="" style="width: 90px; height:90px;">
-                    <img src="{{ asset('images/clover.png') }}" alt="" style="width: 90px; height:90px;">
-                    <img src="{{ asset('images/clover.png') }}" alt="" style="width: 90px; height:90px;">
-                    <img src="{{ asset('images/clover.png') }}" alt="" style="width: 90px; height:90px;">
+                    <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 90px; height:90px;">
+                    <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 90px; height:90px;">
+                    <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 90px; height:90px;">
+                    <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 90px; height:90px;">
+                    <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 90px; height:90px;">
+                    <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 90px; height:90px;">
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
         <div class="" id="walas" style="height: 100vh;">
             <div class="d-flex align-items-center justify-content-center">
                 <img src="{{ asset('images/daun_polos.png') }}" alt="" style="width: 90px; height: 90px;">
-                <span class="text-uppercase fw-bolder" style="font-family: Playfair Display; font-size: 30px;">
+                <span class="text-uppercase fw-bolder h-expand" style="font-family: Playfair Display; font-size: 30px;">
                     our class teacher
                 </span>
                 <img src="{{ asset('images/daun_polos.png') }}" alt="" style="width: 90px; height: 90px; transform: rotate(90deg);">
@@ -51,8 +51,8 @@
                 <img src="{{ asset('images/ravi.jpg') }}" alt="" class="ms-5 image" style="border-radius: 300px 300px 200px 30px; width: 300px; height: 400px;">
 
                 <div class="ms-5 d-flex flex-column justify-content-center align-items-center" style="margin-top: -20px">
-                    <span class="fw-bold text-center" style="font-family: Playfair Display; font-size: 30px;">
-                        Muhamad Ravi Bin Prab-UwU
+                    <span class="fw-bold text-center text-capitalize " style="font-family: Playfair Display; font-size: 30px;">
+                        Muhamad ade ravi Bin Prab-UwU
                     </span>
             
                     <span class="mt-4 d-block w-75">
@@ -95,7 +95,7 @@
 
                     <div class="d-flex justify-content-center align-items-center ">
                         <img src="{{ asset('images/daun_polos_putih.png') }}" alt="" style="width: 90px; height: 90px;">
-                        <span class="text-center fw-bold  " style="font-family: Playfair Display; font-size: 30px;  " >
+                        <span class="text-center fw-bold h-expand " style="font-family: Playfair Display; font-size: 30px;  " >
                             OUR CLASSMATE
                         </span>
                         <img src="{{ asset('images/daun_polos_putih.png') }}" alt="" style="width: 90px; height: 90px; transform: rotate(90deg);">
@@ -103,16 +103,19 @@
 
                     <div class=" container">
                         <div class="d-flex">
-                            <div class="col">
+                            <div class="row col">
                                 <span class="text-uppercase" style="font-family: Roboto Slab, serif; font-size: 25px;">
                                     XII RPL A
+                                </span>
+                                <span class="text-uppercase" style="font-family: Roboto Slab, serif; font-size: 18px;">
+                                    xii rekayasa perangkat lunak a
                                 </span>
                             </div>
                             <div class="row text-end">
                                 <span class="text-uppercase" style="font-family: Roboto Slab, serif; font-size: 25px;">
                                     ANGKATAN 25
                                 </span>
-                                <span style="font-family: Roboto Slab, serif; font-size: 20px;">
+                                <span style="font-family: Roboto Slab, serif; font-size: 18px;">
                                     2023-2024
                                 </span>
                             </div>
@@ -143,7 +146,7 @@
         <div class="d-block " style="height: auto">
             <div class="d-flex align-items-center justify-content-center">
                 <img src="{{ asset('images/daun_polos.png') }}" alt="" style="width: 90px; height: 90px;">
-                <span class="text-uppercase fw-bolder" style="font-family: Playfair Display; font-size: 30px;">
+                <span class="text-uppercase fw-bolder h-expand" style="font-family: Playfair Display; font-size: 30px;">
                     our memories
                 </span>
                 <img src="{{ asset('images/daun_polos.png') }}" alt="" style="width: 90px; height: 90px; transform: rotate(90deg);">

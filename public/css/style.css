@@ -1,3 +1,5 @@
+
+
 .btn-green{
     background:#2E6E65;
     border: 2px solid #2E6E65;
@@ -83,4 +85,24 @@
 
 .image:hover .overlay {
     opacity: 1;
+}
+
+.rotate{
+    transition: all 400ms ease;
+}
+
+.rotate:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all 400ms ease;
+}
+
+.h-expand{
+    transition: all 400ms ease;
+}
+
+.h-expand:hover{
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all 400ms ease;
 }

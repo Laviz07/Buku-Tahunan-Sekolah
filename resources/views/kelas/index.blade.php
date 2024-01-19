@@ -25,10 +25,10 @@
                     </div>
                 
                     <div class="ms-3">
-                        <img src="{{ asset('images/clover.png') }}" alt="" style="width: 100px; height:100px;">
-                        <img src="{{ asset('images/clover.png') }}" alt="" style="width: 100px; height:100px;">
-                        <img src="{{ asset('images/clover.png') }}" alt="" style="width: 100px; height:100px;">
-                        <img src="{{ asset('images/clover.png') }}" alt="" style="width: 100px; height:100px;">
+                        <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 100px; height:100px;">
+                        <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 100px; height:100px;">
+                        <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 100px; height:100px;">
+                        <img src="{{ asset('images/clover.png') }}" alt="" class="rotate" style="width: 100px; height:100px;">
                         {{-- <img src="{{ asset('images/clover.png') }}" alt="" style="width: 100px; height:100px;"> --}}
                     </div>
                 </div>
