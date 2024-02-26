@@ -74,7 +74,7 @@
 </style>
 
     <div class="container">
-        <img class="img" src="{{asset('images/smkn1.jpeg')}}" alt="smkn1">
+        <img class="img" src="{{asset('images/smkn1.jpg')}}" alt="smkn1">
         <br>
         <div class="text">
             <div class="h1">SCHOOL STRUCTURE</div>

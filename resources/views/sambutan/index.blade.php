@@ -3,13 +3,18 @@
 @section('content')  
     {{-- <div class="container mt-4 mb-4">sambitan</div> --}}
     <style>
-        img{
+        .img1{
             width: 1030px;
             height: 325px;
             object-fit: cover;
             border-radius: 20px;
             margin-bottom: 13px;
         }
+
+        .img2{
+            margin-bottom: 5%;
+        }
+
         .custom-button {
             background-color: #2E6E65; /* Warna hijau */
             color: white;
@@ -21,6 +26,7 @@
             border-radius: 40px;
             cursor: pointer;
             margin-top: 20px; /* Atur jarak antara tombol dan teks */
+            margin-bottom: 10%;
         }
         a {
             text-decoration: none;
@@ -32,7 +38,7 @@
         <h2 class="text-uppercase mt-1 d-block " style="font-size: 30px;  font-family: Playfair Display; color: #2E6E65; margin-bottom: 13px;">
             BUKU TAHUNAN DIGITAL
         </h2>
-        <img src="{{ asset('images/test1.jpg') }}" alt="smkn1">
+        <img class="img1" src="{{ asset('images/test1.jpg') }}" alt="smkn1">
         <br>
         <h2 class="text-uppercase mt-1 d-block " style="font-size: 30px;  font-family: Playfair Display; color: #2E6E65; font-weight: bold;">
             SMKN 1 KOTA BEKASI ANGKATAN 25
@@ -45,6 +51,9 @@
                 <a href="">ABOUT</a>
             </button>
         </div>
+    </div>
+    <div class="smbtn2">
+        <img class="img2" src="{{ asset('images/tmpt_foto.png') }}" alt="foto_penyambut">
     </div>
 
 
