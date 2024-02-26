@@ -20,14 +20,17 @@
       background-color: #F4F9F4;
     }
 
-    nav{
-      font-family: Inter;
+    .navbar{
+      font-family: 'Inter', sans-serif;
+      /* position: -webkit-sticky; 
+      position: sticky;
+      top: 0; */
     }
 
     .navbar-nav li a {
       color: #2E6E65; 
       font-size:16px;
-      font-weight:500;
+      font-weight:700;
     }
 
     .navbar-nav li a:hover {
@@ -41,7 +44,7 @@
 
 <nav class="navbar navbar-expand-sm navbar-dark ps-4 pe-4" style="background-color: #F4F9F4;">
   <div class="container-fluid" >
-    <a class="navbar-brand text-uppercase fw-500  " style="color: #2E6E65;" href="#">
+    <a class="navbar-brand text-uppercase fw-bold  " style="color: #2E6E65;" href="#">
       {{-- <i class="bi bi-building" style="font-size: 20px;" ></i> --}}
       NAMA SEKOLAH
     </a>
@@ -51,19 +54,19 @@
     <div class="collapse navbar-collapse justify-content-end"  id="collapsibleNavbar">
       <ul class="navbar-nav fw-light" >
         <li class="nav-item">
-          <a class="nav-link text-uppercase " href="#">home</a>
+          <a class="nav-link text-uppercase " href="{{url('/')}}">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase " href="{{url('/guru')}}">teacher</a>
+          <a class="nav-link text-uppercase " href="{{url('guru')}}">teacher</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase " href="{{url('/kelas')}}">class</a>
+          <a class="nav-link text-uppercase " href="{{url('kelas')}}">class</a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link text-uppercase " href="#">excul</a>
+          <a class="nav-link text-uppercase " href="{{url('ekskul')}}">excul</a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link text-uppercase " href="#">about</a>
+          <a class="nav-link text-uppercase " href="{{url('about')}}">about</a>
         </li>  
         {{-- <li class="nav-item dropdown"> --}}
           {{-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a> --}}

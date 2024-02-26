@@ -18,14 +18,20 @@ use App\Http\Controllers\EkskulController;
 */
 
 Route::get('/', function () {
-    return view('/kelas');
+    return redirect('/home');
 });
 
-Route::get("/kelas", [KelasController::class, "index"]);
-Route::get("/sambutan", [SambutanController::class, "index"]);
+/* ---------------------------------- HOME --------------------------------- */
+Route::get("/home", [SambutanController::class, "index"]);
 
-// Ekskul
-Route::get('/ekskul', [EkskulController::class, 'index'])->name('ekskul.index');
+/* ---------------------------------- KELAS --------------------------------- */
+Route::get("/kelas", [KelasController::class, "index"])->name("kelas");
 Route::get("/kelas/detail", [KelasController::class, "detail"]);
 
-Route::get('/guru', [GuruController::class, 'index'])->name('struktur.index');
+/* ---------------------------------- GURU ---------------------------------- */
+Route::get('/guru', [GuruController::class, 'index'])->name('guru');
+
+/* --------------------------------- EKSKUL --------------------------------- */
+Route::get('/ekskul', [EkskulController::class, 'index'])->name('ekskul');
+
+/* ---------------------------------- ABOUT --------------------------------- */

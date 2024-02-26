@@ -1,0 +1,108 @@
+
+
+.btn-green{
+    background:#2E6E65;
+    border: 2px solid #2E6E65;
+    border-radius: 15px;
+    font-family: "Roboto Slab", serif;
+    color: white;
+    padding: 7px;
+    font-size: 20px;
+    line-height: 29px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.btn-green:hover{
+    background: white;
+    border: 2px solid#2E6E65 ;
+    border-radius: 15px;
+    color:#2E6E65;
+    transition: all 400ms ease;
+}
+
+.btn-black{
+    background:#2E2E2E;
+    border: 2px solid #2E2E2E;
+    border-radius: 15px;
+    font-family: "Roboto Slab", serif;
+    color: white;
+    padding: 7px;
+    font-size: 20px;
+    line-height: 29px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.btn-black:hover{
+    background: white;
+    border: 2px solid#2E2E2E ;
+    border-radius: 15px;
+    color:#2E2E2E;
+    transition: all 400ms ease;
+}
+
+.image-container-p {
+    overflow: hidden;
+    /* height: 300px; */
+    width: 200px; 
+}
+
+.image-container-l {
+    overflow: hidden;
+    width: 100%; 
+    height: 200px; 
+}
+
+.image {
+    transition: transform 0.5s ease;
+    /* width: 200px;
+    height: 300px;  */
+    border-radius: 5px;
+}
+
+/* .image-container:hover  .image,  */
+.image-container-p:hover  .image, 
+.image-container-l:hover .image {
+    transform: scale(1.4);
+    border-radius: 50%;
+    height: auto; 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+} 
+
+.overlay span {
+    display: block;
+}
+
+
+.image:hover .overlay {
+    opacity: 1;
+}
+
+.rotate{
+    transition: all 400ms ease;
+}
+
+.rotate:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all 400ms ease;
+}
+
+.h-expand{
+    transition: all 400ms ease;
+}
+
+.h-expand:hover{
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all 400ms ease;
+}
