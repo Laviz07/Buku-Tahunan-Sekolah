@@ -5,6 +5,7 @@ use App\Http\Controllers\KelasController;
 use App\Http\Controllers\SambutanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EkskulController;
+use App\Http\Controllers\SiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,11 +23,21 @@ Route::get('/', function () {
 });
 
 /* ---------------------------------- HOME --------------------------------- */
-Route::get("/home", [SambutanController::class, "index"]);
+Route::get("/home", [SambutanController::class, "index"])->name("sambutan");
 
 /* ---------------------------------- KELAS --------------------------------- */
-Route::get("/kelas", [KelasController::class, "index"])->name("kelas");
-Route::get("/kelas/detail", [KelasController::class, "detail"]);
+
+Route::prefix('kelas')->group(function () {
+    Route::controller(KelasController::class)->group(function () {
+        Route::get("/", "index")->name("kelas");
+        Route::get("/detail", "detail")->name("detailKelas");
+    });
+
+Route::controller(SiswaController::class)->group(function () {
+        Route::get("/detail/siswa", "index")->name("siswaKelas");
+    });
+
+});
 
 /* ---------------------------------- GURU ---------------------------------- */
 Route::get('/guru', [GuruController::class, 'index'])->name('guru');
